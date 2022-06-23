@@ -1,3 +1,3 @@
-module github.com/deemount/shobber-tpl/pkg/view/v0.1.0-betafix1
+module github.com/deemount/shobber-tpl/pkg/view
 
 go 1.18
