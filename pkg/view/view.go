@@ -8,8 +8,8 @@ type View struct {
 }
 
 func NewView(dir string, bootstrap string, tmpls ...string) *View {
-	tmpls = appendTemplates(dir, tmpls...)
-	t, err := parseTemplates(tmpls...)
+	tmpls = AppendTemplates(dir, tmpls...)
+	t, err := ParseTemplates(tmpls...)
 	if err != nil {
 		panic(err)
 	}

@@ -13,10 +13,10 @@ func getTemplates(dir string) []string {
 	return tmpls
 }
 
-func appendTemplates(dir string, tmpls ...string) []string {
+func AppendTemplates(dir string, tmpls ...string) []string {
 	return append(getTemplates(dir), tmpls...)
 }
 
-func parseTemplates(tmpls ...string) (*template.Template, error) {
+func ParseTemplates(tmpls ...string) (*template.Template, error) {
 	return template.ParseFiles(tmpls...)
 }
