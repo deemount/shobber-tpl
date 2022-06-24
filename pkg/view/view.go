@@ -7,7 +7,7 @@ type View struct {
 	Bootstrap string
 }
 
-func NewView(dir string, bootstrap string, tmpls ...string) *View {
+func NewView(dir string, bootstrap string, tmpls []string) *View {
 	tmpls = AppendTemplates(dir, tmpls...)
 	t, err := ParseTemplates(tmpls...)
 	if err != nil {
