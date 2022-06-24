@@ -1,5 +1,7 @@
 package view
 
 type Data struct {
-	Data interface{}
+	PageTitle  string
+	PageAuthor string
+	Widgets    []Widget
 }
