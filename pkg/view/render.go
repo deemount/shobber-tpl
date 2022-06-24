@@ -1,7 +1,11 @@
 package view
 
-import "net/http"
+import (
+	"net/http"
 
-func (v *View) Render(w http.ResponseWriter, d Data) error {
+	"github.com/deemount/shobber-tpl/pkg/models"
+)
+
+func (v *View) Render(w http.ResponseWriter, d models.Data) error {
 	return v.Template.ExecuteTemplate(w, v.Bootstrap, d)
 }
