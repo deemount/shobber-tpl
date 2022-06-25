@@ -5,5 +5,6 @@ type Data struct {
 	PageAuthor      string
 	PageDescription string
 	NavBarLinks     []Link
+	OG              []OpenGraph
 	Widgets         []Widget
 }
